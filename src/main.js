@@ -22,13 +22,13 @@ Vue.use(VueVideoPlayer)
 Vue.config.productionTip = false
 
 //window.getHost = "http://192.168.1.218:7000/";
-window.getHost = "http://123.59.211.161:7000/swsy/";
+window.getHost = "http://swsy.zhunedu.com/swsy/";
 
 
 Vue.http.interceptors.push(function(request, next) {//拦截器
   // 跨域携带cookie
   request.credentials = true;
-  next()
+  next();
 })
 
 /* eslint-disable no-new */
